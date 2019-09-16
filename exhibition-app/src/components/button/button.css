@@ -1,0 +1,15 @@
+.category_button {
+    width: 200px;
+    height: 30px;
+    background-color: lightgrey; 
+    color: black;
+    border: none;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.category_button:focus{
+    outline-width: 0px;
+}
+.selected_category_button{
+    background-color: grey;
+}
