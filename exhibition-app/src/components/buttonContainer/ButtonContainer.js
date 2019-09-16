@@ -17,23 +17,24 @@ export class ButtonContainer extends Component {
         console.log(this.state.selected)
     }
 
-    renderButton(i, name){
+    renderButtons(values){
         return(
-            < Button 
-                id = {i}
-                name={name}
-                onClick={() => this.handleClick(i)}
-                selected_category = {this.state.selected}
-            />
+            values.map((name, i) => 
+                < Button 
+                    key={i}
+                    id={i}
+                    name={name}
+                    onClick={() => this.handleClick(i)}
+                    selected_category = {this.state.selected}
+                />
+            )
         )
     }
 
     render() {
         return (
             <div>
-                {this.renderButton(0, "kategori_1")}
-                {this.renderButton(1, "kategori_2")}
-                {this.renderButton(2, "kategori_3")}
+                {this.renderButtons(this.props.values)}
             </div>
         )
     }
