@@ -1,3 +1,30 @@
 .App {
+
+}
+.flex_container{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 3% 10% 0 10%;
+}
+.header{
+  flex: 0 100%;
+  height: 150px;
+  text-align: center;
+}
+.categories{
+  flex: 0 30%;
+  height: 500px;
+  text-align: center;
+}
+.exhibition{
+  flex: 0 59%;
+  margin: 0% 5% 0% 5%;
+  height: 500px;
+  text-align: center;
+  border: 1px solid;
+}
+.footer{
+  flex: 0 100%;
+  height: 100px;
   text-align: center;
 }
