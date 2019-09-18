@@ -14,13 +14,12 @@ export class ButtonContainer extends Component {
         this.setState({
             selected: selected_category,
         });
-        console.log(this.state.selected)
     }
 
     renderButtons(values){
         return(
-            values.map((name, i) => 
-                < Button 
+            values.map((name, i) =>
+                < Button
                     key={i}
                     id={i}
                     name={name}

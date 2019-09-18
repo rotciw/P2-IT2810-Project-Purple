@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import './App.css';
 import ButtonContainer from "../buttonContainer/ButtonContainer.js"
+import Showing from "../showing/Showing"
 
 export class App extends Component {
   constructor(props){
@@ -12,29 +13,26 @@ export class App extends Component {
 }
 render(){
     return (
-      <div className="App">
-        <div className="flex_container">
+        <div className="appContainer">
           <div className="header">
-            <h1>Placeholder</h1>
+            <h1>Tittel</h1>
           </div>
-          <div className="categories">
-          <p>Images</p>
-          < ButtonContainer values={this.state.categoryValues} />
-          <p>Text</p>
-          < ButtonContainer values={this.state.categoryValues}/>
-          <p>Sound</p>
-          < ButtonContainer values={this.state.categoryValues}/>
-          <p>Alternatives</p>
-          < ButtonContainer values={this.state.alternatives} />
-          </div>
-          <div className="exhibition">
-            <p>placeholder</p>
-          </div>
-          <div className="footer">
-            <p>footer</p>
+          <div className="contentContainer">
+            <div className="categories">
+              <p>Images</p>
+              < ButtonContainer values={this.state.categoryValues} />
+              <p>Text</p>
+              < ButtonContainer values={this.state.categoryValues} />
+              <p>Sound</p>
+              < ButtonContainer values={this.state.categoryValues} />
+              <p>Alternatives</p>
+              < ButtonContainer values={this.state.alternatives} />
+            </div>
+            <div className="exhibition">
+              <Showing />
+            </div>
           </div>
         </div>
-      </div>
     );
   }
 }
