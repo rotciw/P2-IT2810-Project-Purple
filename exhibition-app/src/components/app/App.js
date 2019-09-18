@@ -17,7 +17,7 @@ export class App extends Component {
     this.setState({
       selectedTextValue:value
     })
-    this.refs.poemNumber.fetchPoem(null, this.state.selectedTextValue)
+    this.refs.poemNumber.fetchPoem(null, value)
   }
 
 render(){
