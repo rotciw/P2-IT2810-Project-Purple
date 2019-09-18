@@ -8,18 +8,30 @@ export class App extends Component {
     super(props);
     this.state = {
       categoryValues: [(0,"category_1"), (1,"category_2"), (2,"category_3")],
-      alternatives: [(0,"1"), (1,"2"), (2,"3"), (3,"4")],
-      textCategory: 0,
-      selectedValue: 0
+      categoryContainerValues: [(0, "Images"),(1, "Text"),(2,"Sound")],
+      alternativeValues: [(0,"1"), (1,"2"), (2,"3"), (3,"4")],
+      selectedCategoriesList: [null, null, null],
+      selectedAlternative: null,
     }
   }
 
-  setSelectedValue = (value) => {
-    this.setState({
-      selectedValue:value
-    })
+  setSelectedValue = (value, id) => {
+    if (id <= 2){
+      let selectedCategoriesList = this.state.selectedCategoriesList;
+      selectedCategoriesList[id] = value;
+      this.setState({
+        selectedCategoriesList: selectedCategoriesList,
+      })
+    }
+    else{
+      let selectedAlternative = value;
+      this.setState({
+        selectedAlternative: selectedAlternative,
+      })
+    }
+    
   }
-
+  
 render(){
     return (
         <div className="appContainer">
@@ -30,13 +42,13 @@ render(){
           <div className="contentContainer">
             <div className="categories">
               <p>Images</p>
-              < ButtonContainer values={this.state.categoryValues} />
+              < ButtonContainer id="0" values={this.state.categoryValues} selectedValue={this.setSelectedValue} />
               <p>Text</p>
-              < ButtonContainer values={this.state.categoryValues} selectedValue={this.setSelectedValue} />
+              < ButtonContainer id="1" values={this.state.categoryValues} selectedValue={this.setSelectedValue} />
               <p>Sound</p>
-              < ButtonContainer values={this.state.categoryValues} />
+              < ButtonContainer id="2" values={this.state.categoryValues} selectedValue={this.setSelectedValue}/>
               <p>Alternatives</p>
-              < ButtonContainer values={this.state.alternatives} />
+              < ButtonContainer id="3" values={this.state.alternativeValues} selectedValue={this.setSelectedValue}/>
             </div>
             <div className="exhibition">
               <Showing poemNumber={this.state.selectedValue}/>

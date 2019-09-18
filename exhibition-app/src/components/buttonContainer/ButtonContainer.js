@@ -14,7 +14,8 @@ export default class ButtonContainer extends Component {
         this.setState({
             selected: selected_category,
         });
-        this.props.selectedValue(selected_category)
+        this.props.selectedValue(selected_category, this.props.id)
+        console.log(this.props.id)
     }
 
     renderButtons(values){
