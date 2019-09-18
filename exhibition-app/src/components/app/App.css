@@ -19,9 +19,10 @@
 
 .exhibition{
   width: 50%;
-  height: 200px;
+  height: 500px;
   margin: auto;
   border: 1px solid;
   overflow: hidden;
   padding: 25px;
+  text-align: center;
 }

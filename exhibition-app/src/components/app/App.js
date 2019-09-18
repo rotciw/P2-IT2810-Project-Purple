@@ -20,13 +20,13 @@ export class App extends Component {
   }
 
   updateCombination(){
-    //this.refs.setCombination.fetchImage(this.state.selectedValuesList[0], this.state.selectedValuesList[3])
+    this.refs.setCombination.fetchImage(this.state.selectedValuesList[0], this.state.selectedValuesList[3])
     this.refs.setCombination.fetchPoem(this.state.selectedValuesList[1], this.state.selectedValuesList[3])
   }
 
-  setSelectedValue = (value, id) => {
+  setSelectedValue = (value, buttonGroupId) => {
     let selectedValuesList = this.state.selectedValuesList;
-    selectedValuesList[id] = value;
+    selectedValuesList[buttonGroupId] = value;
     this.setState({
       selectedValuesList: selectedValuesList,
     })
