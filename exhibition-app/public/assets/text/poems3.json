@@ -1,0 +1,24 @@
+{
+    "poems": [
+        {
+            "id": 8,
+            "title": "The Dust of Snow",
+            "content": "The way a crow \nShook down on me \nThe dust of snow \nFrom a hemlock tree\nHas given my heart \nA change of mood \nAnd saved some part \nOf a day I had rued."
+        },
+        {
+            "id": 9,
+            "title": "The Purple Cow",
+            "content": "I never saw a Purple Cow, \nI never hope to see one, \nBut I can tell you, anyhow, \nI’d rather see than be one!"
+        },
+        {
+            "id": 10,
+            "title": "Harlem",
+            "content": "What happens to a dream deferred? \nDoes it dry up like a raisin in the sun? \nOr fester like a sore— \nAnd then run? \nDoes it stink like rotten meat? \nOr crust and sugar over— like a syrupy sweet? \nMaybe it just sags like a heavy load. \nOr does it explode?"
+        },
+        {
+            "id": 11,
+            "title": "Much Madness Is Divinest Sense",
+            "content": "Much Madness is divinest Sense -\nTo a discerning Eye -\nMuch Sense - the starkest Madness -\n’Tis the Majority\nIn this, as all, prevail -\nAssent - and you are sane -\nDemur - you’re straightway dangerous -\nAnd handled with a Chain -"    
+        }
+    ]
+}

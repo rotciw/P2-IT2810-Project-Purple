@@ -8,28 +8,38 @@ export class App extends Component {
     super(props);
     this.state = {
       categoryValues: [(0,"category_1"), (1,"category_2"), (2,"category_3")],
-      alternatives: [(0,"1"), (1,"2"), (2,"3"), (3,"4")]
+      alternatives: [(0,"1"), (1,"2"), (2,"3"), (3,"4")],
+      textCategory: 0,
+      selectedValue: 0
     }
-}
+  }
+
+  setSelectedValue = (value) => {
+    this.setState({
+      selectedValue:value
+    })
+  }
+
 render(){
     return (
         <div className="appContainer">
           <div className="header">
             <h1>Tittel</h1>
+            {this.state.selectedValue}
           </div>
           <div className="contentContainer">
             <div className="categories">
               <p>Images</p>
               < ButtonContainer values={this.state.categoryValues} />
               <p>Text</p>
-              < ButtonContainer values={this.state.categoryValues} />
+              < ButtonContainer values={this.state.categoryValues} selectedValue={this.setSelectedValue} />
               <p>Sound</p>
               < ButtonContainer values={this.state.categoryValues} />
               <p>Alternatives</p>
               < ButtonContainer values={this.state.alternatives} />
             </div>
             <div className="exhibition">
-              <Showing />
+              <Showing poemNumber={this.state.selectedValue}/>
             </div>
           </div>
         </div>
