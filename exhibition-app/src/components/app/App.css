@@ -18,7 +18,8 @@
 }
 
 .exhibition{
-  max-width: 800px;
+  width: 50%;
+  height: 200px;
   margin: auto;
   border: 1px solid;
   overflow: hidden;

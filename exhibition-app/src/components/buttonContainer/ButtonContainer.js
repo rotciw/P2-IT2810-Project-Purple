@@ -6,7 +6,7 @@ export default class ButtonContainer extends Component {
     constructor(props){
         super(props);
         this.state = {
-            selected: null,
+            selected: this.props.selected,
         }
     }
     handleClick(i){

@@ -9,9 +9,12 @@ export default class Showing extends Component {
     }
 }
 
+fetchImage(imageCategory, imageNumber){
+    console.log("success")
+}
 
 fetchPoem(poemCategory, poemNumber) {
-    fetch("assets/text/poems1.json")
+    fetch("assets/text/poems" + (poemCategory+1) + ".json")
     .then(response => {
         return response.json()
         })
