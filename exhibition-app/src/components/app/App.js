@@ -13,19 +13,18 @@ export class App extends Component {
 }
 render(){
     return (
-      <div className="App">
-        <div className="flexContainer">
+        <div className="appContainer">
           <div className="header">
-            Header
+            <h1>Tittel</h1>
           </div>
           <div className="contentContainer">
             <div className="categories">
               <p>Images</p>
               < ButtonContainer values={this.state.categoryValues} />
               <p>Text</p>
-              < ButtonContainer values={this.state.categoryValues}/>
+              < ButtonContainer values={this.state.categoryValues} />
               <p>Sound</p>
-              < ButtonContainer values={this.state.categoryValues}/>
+              < ButtonContainer values={this.state.categoryValues} />
               <p>Alternatives</p>
               < ButtonContainer values={this.state.alternatives} />
             </div>
@@ -33,11 +32,7 @@ render(){
               <Showing />
             </div>
           </div>
-          <div className="footer">
-            <p>footer</p>
-          </div>
         </div>
-      </div>
     );
   }
 }

@@ -1,9 +1,9 @@
 .category_button {
     width: 33%;
-    height: 30px;
-    background-color: lightgrey; 
+    height: 50px;
+    background-color: lightgrey;
     color: black;
-    border: none;
+    border: 1px solid grey;
     text-decoration: none;
     text-transform: uppercase;
 }

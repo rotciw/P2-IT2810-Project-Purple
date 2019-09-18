@@ -1,35 +1,28 @@
-.flexContainer {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+.header {
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 .contentContainer {
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
+  align-items: center;
   justify-content: space-around;
 }
 
-.header{
-  flex: 0;
-  flex-direction: column;
-  text-align: center;
-}
-
 .categories{
-  flex: 1;
   height: 500px;
+  width: 500px;
+  margin: auto;
   text-align: center;
 }
 
 .exhibition{
-  flex: 2;
-  height: 500px;
+  /* height: 500px; */
+  max-width: 1000px;
+  margin: auto;
   text-align: center;
   border: 1px solid;
-}
-
-.footer{
-
-  text-align: center;
+  overflow: hidden;
+  padding: 5px;
 }
