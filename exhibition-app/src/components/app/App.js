@@ -9,14 +9,13 @@ export class App extends Component {
     this.state = {
       categoryValues: [(0,"category_1"), (1,"category_2"), (2,"category_3")],
       alternatives: [(0,"1"), (1,"2"), (2,"3"), (3,"4")],
-      textCategory: 0,
-      selectedValue: 0
+      selectedTextValue: 0
     }
   }
 
   setSelectedValue = (value) => {
     this.setState({
-      selectedValue:value
+      selectedTextValue:value
     })
   }
 

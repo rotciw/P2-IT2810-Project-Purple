@@ -10,10 +10,10 @@ export default class Showing extends Component {
 }
 
 componentDidMount() {
-   this.fetchPoems(null, this.props.poemNumber)
+   this.fetchPoem(null, this.props.poemNumber)
 }
 
-fetchPoems(poemCategory, poemNumber) {
+fetchPoem(poemCategory, poemNumber) {
     fetch("assets/text/poems1.json")
     .then(response => {
         return response.json()
