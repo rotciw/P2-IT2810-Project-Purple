@@ -7,22 +7,22 @@
   display: flex;
   flex-flow: row wrap;
   align-items: center;
-  justify-content: space-around;
+  /* justify-content: space-around; */
 }
 
 .categories{
   height: 500px;
-  width: 500px;
+  width: 400px;
   margin: auto;
   text-align: center;
 }
 
 .exhibition{
-  /* height: 500px; */
-  max-width: 1000px;
+  width: 50%;
+  height: 500px;
   margin: auto;
-  text-align: center;
   border: 1px solid;
   overflow: hidden;
-  padding: 5px;
+  padding: 25px;
+  text-align: center;
 }

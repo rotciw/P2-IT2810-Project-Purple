@@ -1,27 +1,31 @@
 import React, { Component } from 'react'
 
 export default class Showing extends Component {
-  constructor(props){
-    super(props);
-    this.state = {
-      poems: []
-    }
+    constructor(props){
+        super(props);
+        this.state = {
+            image: null,
+            poemTitle: "",
+            poemContent: "",
+        }
 }
 
-componentDidMount() {
-   this.fetchPoems()
+fetchImage(imageCategory, imageNumber){
+    fetch("assets/img/image" + (imageCategory+1) + "_" + (imageNumber+1) + ".svg")
+    .then(response => response.text())
+    .then(str => this.setState({image: str}))
 }
 
-fetchPoems() {
-    fetch("text/poems.json")
+fetchPoem(poemCategory, poemNumber) {
+    fetch("assets/text/poems" + (poemCategory+1) + ".json")
     .then(response => {
         return response.json()
         })
     .then(
         (result) => {
-            console.log(result)
             this.setState({
-                poems: result.poems
+              poemTitle: result.poems[poemNumber].title,
+              poemContent: result.poems[poemNumber].content
             })
         }
     ).catch(err => {
@@ -29,18 +33,16 @@ fetchPoems() {
     })
 }
 
+createMarkup() {
+    return {__html: 'First &middot; Second'};
+  }
+
 render(){
-    let { poems } = this.state;
     return (
       <div>
-         <ul>
-          {poems.map(poem => (
-            <li key={poem.id}>
-              <h1>{poem.title}</h1>
-              {poem.content}
-            </li>
-          ))}
-        </ul>
+          <div dangerouslySetInnerHTML={{__html: this.state.image}}></div>
+          <h1>{this.state.poemTitle}</h1>
+          {this.state.poemContent}
       </div>
     );
   }

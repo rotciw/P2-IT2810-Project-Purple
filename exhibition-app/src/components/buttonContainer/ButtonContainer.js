@@ -2,11 +2,11 @@ import React, { Component } from 'react'
 import Button from "../button/Button.js"
 import "./ButtonContainer.css"
 
-export class ButtonContainer extends Component {
+export default class ButtonContainer extends Component {
     constructor(props){
         super(props);
         this.state = {
-            selected: null,
+            selected: this.props.selected,
         }
     }
     handleClick(i){
@@ -14,6 +14,7 @@ export class ButtonContainer extends Component {
         this.setState({
             selected: selected_category,
         });
+        this.props.selectedValue(selected_category, this.props.id)
     }
 
     renderButtons(values){
@@ -38,5 +39,3 @@ export class ButtonContainer extends Component {
         )
     }
 }
-
-export default ButtonContainer
