@@ -11,7 +11,7 @@ export default class Showing extends Component {
 }
 
 fetchImage(imageCategory, imageNumber){
-    fetch("assets/img/image1.svg")
+    fetch("assets/img/image" + (imageCategory+1) + "_" + (imageNumber+1) + ".svg")
     .then(response => response.text())
     .then(str => this.setState({image: str}))
 }
