@@ -1,6 +1,6 @@
 .category_button {
-    width: 33%;
-    height: 50px;
+    width: 100w;
+    padding: 20px;
     background-color: lightgrey;
     color: black;
     border: 1px solid grey;

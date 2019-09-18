@@ -12,17 +12,15 @@
 
 .categories{
   height: 500px;
-  width: 500px;
+  width: 400px;
   margin: auto;
   text-align: center;
 }
 
 .exhibition{
-  /* height: 500px; */
   max-width: 1000px;
   margin: auto;
-  text-align: center;
   border: 1px solid;
   overflow: hidden;
-  padding: 5px;
+  padding: 25px;
 }
