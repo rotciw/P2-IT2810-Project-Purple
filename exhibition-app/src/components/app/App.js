@@ -22,6 +22,9 @@ export class App extends Component {
       this.setState({
         selectedCategoriesList: selectedCategoriesList,
       })
+      if (id === 1){
+        this.refs.poemNumber.fetchPoem(null, value)
+      }
     }
     else{
       let selectedAlternative = value;
@@ -29,7 +32,6 @@ export class App extends Component {
         selectedAlternative: selectedAlternative,
       })
     }
-    
   }
   
 render(){
@@ -51,7 +53,7 @@ render(){
               < ButtonContainer id="3" values={this.state.alternativeValues} selectedValue={this.setSelectedValue}/>
             </div>
             <div className="exhibition">
-              <Showing poemNumber={this.state.selectedValue}/>
+              <Showing ref="poemNumber" />
             </div>
           </div>
         </div>
