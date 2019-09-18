@@ -17,6 +17,7 @@ export class App extends Component {
     this.setState({
       selectedTextValue:value
     })
+    this.refs.poemNumber.fetchPoem(null, this.state.selectedTextValue)
   }
 
 render(){
@@ -38,7 +39,7 @@ render(){
               < ButtonContainer values={this.state.alternatives} />
             </div>
             <div className="exhibition">
-              <Showing poemNumber={this.state.selectedValue}/>
+              <Showing ref="poemNumber" />
             </div>
           </div>
         </div>

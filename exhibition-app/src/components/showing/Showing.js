@@ -9,9 +9,6 @@ export default class Showing extends Component {
     }
 }
 
-componentDidMount() {
-   this.fetchPoem(null, this.props.poemNumber)
-}
 
 fetchPoem(poemCategory, poemNumber) {
     fetch("assets/text/poems1.json")
