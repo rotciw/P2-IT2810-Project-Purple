@@ -1,0 +1,24 @@
+{
+    "poems": [
+        {
+        "id": 9,
+        "title": "Harlem",
+        "content": "What happens to a dream deferred? \nDoes it dry up like a raisin in the sun? \nOr fester like a sore— \nAnd then run? \nDoes it stink like rotten meat? \nOr crust and sugar over— like a syrupy sweet? \nMaybe it just sags like a heavy load. \nOr does it explode?"
+        },
+        {
+        "id": 10,
+        "title": "Death",
+        "content": "Nor dread nor hope attend\nA dying animal;\nA man awaits his end\nDreading and hoping all;\nMany times he died,\nMany times rose again.\nA great man in his pride\nConfronting murderous men\nCasts derision upon\nSupersession of breath;\nHe knows death to the bone -\nMan has created death."
+        },
+        {
+        "id": 11,
+        "title": "My Life Has Been the Poem",
+        "content": "My life has been the poem I would have writ\nBut I could not both live and utter it."
+        },
+        {
+        "id": 12,
+        "title": "Much Madness Is Divinest Sense",
+        "content": "Much Madness is divinest Sense -\nTo a discerning Eye -\nMuch Sense - the starkest Madness -\n’Tis the Majority\nIn this, as all, prevail -\nAssent - and you are sane -\nDemur - you’re straightway dangerous -\nAnd handled with a Chain -"    
+        }
+    ]
+}
