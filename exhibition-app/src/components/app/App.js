@@ -10,7 +10,7 @@ export class App extends Component {
       categoryValues: [(0,"category_1"), (1,"category_2"), (2,"category_3")],
       categoryContainerValues: [(0, "Images"),(1, "Text"),(2,"Sound")],
       alternativeValues: [(0,"1"), (1,"2"), (2,"3"), (3,"4")],
-      // [image, text, sound, alternative_nr]
+      // [image, text, audio, alternative_nr]
       selectedValuesList: [0, 0, 0, 0],
     }
   }
@@ -46,7 +46,7 @@ render(){
               < ButtonContainer id="0" values={this.state.categoryValues} selectedValue={this.setSelectedValue} selected={0}/>
               <p>Text</p>
               < ButtonContainer id="1" values={this.state.categoryValues} selectedValue={this.setSelectedValue} selected={0}/>
-              <p>Sound</p>
+              <p>Audio</p>
               < ButtonContainer id="2" values={this.state.categoryValues} selectedValue={this.setSelectedValue} selected={0}/>
               <p>Alternatives</p>
               < ButtonContainer id="3" values={this.state.alternativeValues} selectedValue={this.setSelectedValue} selected={0}/>
