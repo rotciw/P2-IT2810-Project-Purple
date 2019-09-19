@@ -7,6 +7,7 @@ export default class Showing extends Component {
             image: null,
             poemTitle: "",
             poemContent: "",
+            audio: null,
         }
 }
 
@@ -32,6 +33,10 @@ fetchPoem(poemCategory, poemNumber) {
         console.log("Error: " + err)
     })
 }
+fetchAudio(audioCatagory, audioNumber) {
+    let element = React.createElement('audio',{src:('assets/audio/audio' + (audioCatagory+1) + '_' + (audioNumber+1) + '.mp3'), type:'audio/mpeg', controls:true},null)
+    this.setState({audio:element})
+}
 
 createMarkup() {
     return {__html: 'First &middot; Second'};
@@ -43,7 +48,9 @@ render(){
           <div dangerouslySetInnerHTML={{__html: this.state.image}}></div>
           <h1>{this.state.poemTitle}</h1>
           {this.state.poemContent}
+          {this.state.audio}
       </div>
+
     );
   }
 }
