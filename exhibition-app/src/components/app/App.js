@@ -19,18 +19,34 @@ export class App extends Component {
     this.updateCombination();
   }
 
-  updateCombination(){
-    this.refs.setCombination.fetchImage(this.state.selectedValuesList[0], this.state.selectedValuesList[3])
-    this.refs.setCombination.fetchPoem(this.state.selectedValuesList[1], this.state.selectedValuesList[3])
+  updateCombination(buttonGroupId=null){
+    if (buttonGroupId === "0") {
+      console.log("image updated")
+      this.refs.setCombination.fetchImage(this.state.selectedValuesList[0], this.state.selectedValuesList[3])
+    }else if (buttonGroupId === "1"){
+      console.log("text updated")
+      this.refs.setCombination.fetchPoem(this.state.selectedValuesList[1], this.state.selectedValuesList[3])
+    }else if (buttonGroupId === "2"){
+      console.log("audio updated")
+      //this.refs.setCombination.fetchAudio(this.state.selectedValuesList[2], this.state.selectedValuesList[3])
+    }else if (buttonGroupId === null || buttonGroupId === "3"){
+      console.log("everything updated")
+      this.refs.setCombination.fetchImage(this.state.selectedValuesList[0], this.state.selectedValuesList[3])
+      this.refs.setCombination.fetchPoem(this.state.selectedValuesList[1], this.state.selectedValuesList[3])
+      //this.refs.setCombination.fetchAudio(this.state.selectedValuesList[2], this.state.selectedValuesList[3])
+    }
   }
 
   setSelectedValue = (value, buttonGroupId) => {
+
     let selectedValuesList = this.state.selectedValuesList;
-    selectedValuesList[buttonGroupId] = value;
-    this.setState({
-      selectedValuesList: selectedValuesList,
-    })
-    this.updateCombination()
+    if (selectedValuesList[buttonGroupId] !== value){
+      selectedValuesList[buttonGroupId] = value;
+      this.setState({
+        selectedValuesList: selectedValuesList,
+      })
+      this.updateCombination(buttonGroupId)
+    }
   }
   
 render(){
