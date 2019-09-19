@@ -33,10 +33,6 @@ fetchPoem(poemCategory, poemNumber) {
     })
 }
 
-createMarkup() {
-    return {__html: 'First &middot; Second'};
-  }
-
 render(){
     return (
       <div>
