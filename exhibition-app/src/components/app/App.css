@@ -16,7 +16,7 @@ html, body {
 .contentContainer {
   display: flex;
   flex-flow: row wrap;
-  padding: 5px;
+  /* padding: 5px; */
 }
 
 .categories{
