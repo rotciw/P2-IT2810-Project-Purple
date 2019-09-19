@@ -9,13 +9,30 @@
     text-transform: uppercase;
     transition: all 200ms linear;
 }
+
+@media (min-width: 1200px){
+    .category_button{
+      padding:30px;
+      font-size: 18px;
+    }
+}
+
+@media (min-width: 768px){
+    .category_button{
+      padding:30px;
+      font-size: 14px;
+    }
+}
+
 .category_button:focus {
     outline-width: 0px;
 }
+
 .category_button:hover {
     background-color: #615AE5;
     cursor: pointer;
 }
+
 .selected_category_button{
     background-color: #6C63FF;
 }

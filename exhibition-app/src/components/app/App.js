@@ -34,7 +34,6 @@ export class App extends Component {
   }
 
   setSelectedValue = (value, buttonGroupId) => {
-
     let selectedValuesList = this.state.selectedValuesList;
     if (selectedValuesList[buttonGroupId] !== value){
       selectedValuesList[buttonGroupId] = value;
@@ -53,13 +52,13 @@ render(){
           </div>
           <div className="contentContainer">
             <div className="categories">
-              <p>Images</p>
+              <h2>Images</h2>
               < ButtonContainer id="0" values={this.state.categoryValues} selectedValue={this.setSelectedValue} selected={0}/>
-              <p>Text</p>
+              <h2>Text</h2>
               < ButtonContainer id="1" values={this.state.categoryValues} selectedValue={this.setSelectedValue} selected={0}/>
-              <p>Audio</p>
+              <h2>Audio</h2>
               < ButtonContainer id="2" values={this.state.categoryValues} selectedValue={this.setSelectedValue} selected={0}/>
-              <p>Alternatives</p>
+              <h2>Alternatives</h2>
               < ButtonContainer id="3" values={this.state.alternativeValues} selectedValue={this.setSelectedValue} selected={0}/>
             </div>
             <div className="exhibition">
