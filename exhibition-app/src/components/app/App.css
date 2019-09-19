@@ -10,7 +10,8 @@ html, body {
 
 .header {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
+  color:#2F2E41;
 }
 
 .contentContainer {
@@ -21,15 +22,22 @@ html, body {
 .categories{
   margin: 0 auto 20px auto;
   text-align: center;
+
 }
 
 .exhibition{
-  width: 30%;
+  width: 60%;
   margin: 0 auto;
   overflow: hidden;
   padding: 30px;
   border: 5px solid #615AE5;
   background-color: #F2F2F2;
+  color:#2F2E41;
   margin-bottom: 30px;
 }
 
+@media (min-width: 768px){ 
+  .exhibition{
+    width: 35%;
+  }
+}
