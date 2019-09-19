@@ -48,7 +48,7 @@ render(){
     return (
         <div className="appContainer">
           <div className="header">
-            <h1>Project 2: Exhibition app</h1>
+            <h1>exhibition: purple.</h1>
           </div>
           <div className="contentContainer">
             <div className="categories">
