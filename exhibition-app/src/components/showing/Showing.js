@@ -24,7 +24,6 @@ fetchImage(imageCategory, imageNumber){
             console.log("Fetched image using AJAX Fetch API");
         })
     }
-    
 }
 
 fetchPoem(poemCategory, poemNumber) {
@@ -55,12 +54,12 @@ fetchPoem(poemCategory, poemNumber) {
 fetchAudio(audioCategory, audioNumber) {
     if (sessionStorage.getItem("audio" + (audioCategory+1) + "_" + (audioNumber+1)) !== null){
         let audioJSON = JSON.parse(sessionStorage.getItem("audio" + (audioCategory+1) + "_" + (audioNumber+1)));
-        let audioElement = React.createElement('audio',{src:audioJSON.props.src, type:'audio/mpeg', controls:true},null)
+        let audioElement = React.createElement('audio',{style:{width:"100%"},src:audioJSON.props.src, type:'audio/mpeg', controls:true},null)
         console.log(audioJSON.props.src)
         this.setState({audio: audioElement});
         console.log("Loaded audio from sessionStorage");
     }else{
-        let element = React.createElement('audio',{src:('assets/audio/audio' + (audioCategory+1) + '_' + (audioNumber+1) + '.mp3'), type:'audio/mpeg', controls:true},null)
+        let element = React.createElement('audio',{style:{width:"100%"}, className:"test",src:('assets/audio/audio' + (audioCategory+1) + '_' + (audioNumber+1) + '.mp3'), type:'audio/mpeg', controls:true},null)
         this.setState({audio: element})
         sessionStorage.setItem("audio" + (audioCategory+1) + "_" + (audioNumber+1), JSON.stringify(element))
         console.log("Fetched audio using AJAX Fetch API");
