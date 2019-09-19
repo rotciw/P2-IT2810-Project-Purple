@@ -7,14 +7,13 @@
     border: 1px solid #615AE5;
     text-decoration: none;
     text-transform: uppercase;
-    transition-duration: 300ms;
+    transition: all 200ms linear;
 }
 .category_button:focus {
     outline-width: 0px;
 }
 .category_button:hover {
     background-color: #615AE5;
-    transform: scale(1.1);
     cursor: pointer;
 }
 .selected_category_button{
