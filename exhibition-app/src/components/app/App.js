@@ -7,7 +7,7 @@ export class App extends Component {
   constructor(props){
     super(props);
     this.state = {
-      categoryValues: [(0,"category_1"), (1,"category_2"), (2,"category_3")],
+      categoryValues: [(0,"category 1"), (1,"category 2"), (2,"category 3")],
       categoryContainerValues: [(0, "Images"),(1, "Text"),(2,"Sound")],
       alternativeValues: [(0,"1"), (1,"2"), (2,"3"), (3,"4")],
       // [image, text, audio, alternative_nr]
@@ -52,13 +52,13 @@ render(){
           </div>
           <div className="contentContainer">
             <div className="categories">
-              <h2>Images</h2>
+              <h2>1. Choose Image</h2>
               < ButtonContainer id="0" values={this.state.categoryValues} selectedValue={this.setSelectedValue} selected={0}/>
-              <h2>Text</h2>
+              <h2>2. Choose Text</h2>
               < ButtonContainer id="1" values={this.state.categoryValues} selectedValue={this.setSelectedValue} selected={0}/>
-              <h2>Audio</h2>
+              <h2>3. Choose Audio</h2>
               < ButtonContainer id="2" values={this.state.categoryValues} selectedValue={this.setSelectedValue} selected={0}/>
-              <h2>Alternatives</h2>
+              <h2>4. Choose Alternatives</h2>
               < ButtonContainer id="3" values={this.state.alternativeValues} selectedValue={this.setSelectedValue} selected={0}/>
             </div>
             <div className="exhibition">
