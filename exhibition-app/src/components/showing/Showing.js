@@ -56,7 +56,6 @@ fetchAudio(audioCategory, audioNumber) {
     if (sessionStorage.getItem("audio" + (audioCategory+1) + "_" + (audioNumber+1)) !== null){
         let audioJSON = JSON.parse(sessionStorage.getItem("audio" + (audioCategory+1) + "_" + (audioNumber+1)));
         let audioElement = React.createElement('audio',{src:audioJSON.props.src, type:'audio/mpeg', controls:true},null)
-        console.log(audioJSON.props.src)
         this.setState({audio: audioElement});
         console.log("Loaded audio from sessionStorage");
     }else{
