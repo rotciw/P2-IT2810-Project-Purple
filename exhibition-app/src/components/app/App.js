@@ -44,13 +44,13 @@ export class App extends Component {
       this.updateCombination(buttonGroupId)
     }
   }
-  
+
 render(){
     return (
         <div className="appContainer">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
           <div className="header">
             <h1>Tittel</h1>
-            {this.state.selectedValue}
           </div>
           <div className="contentContainer">
             <div className="categories">
