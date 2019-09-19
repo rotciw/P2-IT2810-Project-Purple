@@ -72,7 +72,7 @@ render(){
       <div>
           <div dangerouslySetInnerHTML={{__html: this.state.image}}></div>
           <h1>{this.state.poemTitle}</h1>
-          {this.state.poemContent}
+          <p>{this.state.poemContent}</p>
           {this.state.audio}
       </div>
 

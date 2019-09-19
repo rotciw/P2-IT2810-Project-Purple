@@ -7,7 +7,7 @@ export class App extends Component {
   constructor(props){
     super(props);
     this.state = {
-      categoryValues: [(0,"category_1"), (1,"category_2"), (2,"category_3")],
+      categoryValues: [(0,"category 1"), (1,"category 2"), (2,"category 3")],
       categoryContainerValues: [(0, "Images"),(1, "Text"),(2,"Sound")],
       alternativeValues: [(0,"1"), (1,"2"), (2,"3"), (3,"4")],
       // [image, text, audio, alternative_nr]
@@ -34,7 +34,6 @@ export class App extends Component {
   }
 
   setSelectedValue = (value, buttonGroupId) => {
-
     let selectedValuesList = this.state.selectedValuesList;
     if (selectedValuesList[buttonGroupId] !== value){
       selectedValuesList[buttonGroupId] = value;
@@ -48,19 +47,18 @@ export class App extends Component {
 render(){
     return (
         <div className="appContainer">
-          <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
           <div className="header">
-            <h1>Project 2: Exhibition app</h1>
+            <h1>exhibition: purple.</h1>
           </div>
           <div className="contentContainer">
             <div className="categories">
-              <p>Images</p>
+              <h2>1. Choose Image</h2>
               < ButtonContainer id="0" values={this.state.categoryValues} selectedValue={this.setSelectedValue} selected={0}/>
-              <p>Text</p>
+              <h2>2. Choose Text</h2>
               < ButtonContainer id="1" values={this.state.categoryValues} selectedValue={this.setSelectedValue} selected={0}/>
-              <p>Audio</p>
+              <h2>3. Choose Audio</h2>
               < ButtonContainer id="2" values={this.state.categoryValues} selectedValue={this.setSelectedValue} selected={0}/>
-              <p>Alternatives</p>
+              <h2>4. Choose Alternatives</h2>
               < ButtonContainer id="3" values={this.state.alternativeValues} selectedValue={this.setSelectedValue} selected={0}/>
             </div>
             <div className="exhibition">
