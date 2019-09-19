@@ -38,10 +38,6 @@ fetchAudio(audioCatagory, audioNumber) {
     this.setState({audio:element})
 }
 
-createMarkup() {
-    return {__html: 'First &middot; Second'};
-  }
-
 render(){
     return (
       <div>
