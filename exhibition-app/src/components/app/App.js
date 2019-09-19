@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import './App.css';
 import ButtonContainer from "../buttonContainer/ButtonContainer.js"
 import Showing from "../showing/Showing"
-import Footer from "../footer/Footer"
 
 export class App extends Component {
   constructor(props){
@@ -68,7 +67,6 @@ render(){
               <Showing ref="setCombination" />
             </div>
           </div>
-          <Footer> Hei</Footer>
         </div>
     );
   }

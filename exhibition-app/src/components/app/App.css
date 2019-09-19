@@ -5,8 +5,7 @@ html, body {
 }
 
 .appContainer {
-  /* padding: 15px; */
-  position: relative;
+  /* position: relative; */
 
 }
 
@@ -33,3 +32,4 @@ html, body {
   border: 5px solid #615AE5;
   background-color: #F2F2F2;
 }
+
