@@ -1,15 +1,22 @@
 .category_button {
     width: 100w;
     padding: 20px;
-    background-color: lightgrey;
-    color: black;
-    border: 1px solid grey;
+    background-color: #F2F2F2;
+    color: #2F2E41;
+    font-weight: bold;
+    border: 1px solid #615AE5;
     text-decoration: none;
     text-transform: uppercase;
+    transition-duration: 300ms;
 }
-.category_button:focus{
+.category_button:focus {
     outline-width: 0px;
 }
+.category_button:hover {
+    background-color: #615AE5;
+    transform: scale(1.1);
+    cursor: pointer;
+}
 .selected_category_button{
-    background-color: grey;
+    background-color: #6C63FF;
 }
