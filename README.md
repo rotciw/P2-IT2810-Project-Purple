@@ -21,6 +21,7 @@ Filene er lagret lokalt i sine respektive mapper i /public/assets/ mappen i pros
 ## Krav til teknologi
 
 ### React
+![Komponent Struktur](componentStructure.png)
 
 ### Ajax
 
