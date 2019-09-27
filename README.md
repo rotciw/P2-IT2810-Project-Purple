@@ -22,6 +22,8 @@ Filene er lagret lokalt i sine respektive mapper i /public/assets/ mappen i pros
 
 ### React
 
+![Mappestruktur](https://imgur.com/a/jEXll59)
+
 ### Ajax
 
 ### HTML Web Storage
