@@ -30,6 +30,11 @@ Dette er komponentstrukturen vi bruker:
 
 
 ### Ajax
+SVG-filene og JSON-filene lastes inn med AJAX, der vi bruker fetch().
+
+Filene brukes kun når de benyttes, og vi bruker sessionStorage (mer om det under), ved gjenbruk.
+
+Lyd håndteres med HTML5 tag for audio.
 
 ### HTML Web Storage
 
@@ -49,9 +54,6 @@ I prosjektet blir Viewport og media-queries brukt. Viewport blir automatisk defi
 - Selve utstillinge. Når seksjonene på siden wrappes, vil høyreseksjon bli større, for å benytte den nye plassen som elementet får ved wrap.
 
 SVG-bildene som er implementert skalerer også fint avhengig av skjermbredde.
-
-
-### Node.js og NPM
 
 ### Testing
 
