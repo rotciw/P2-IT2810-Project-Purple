@@ -37,6 +37,9 @@ Filene brukes kun når de benyttes, og vi bruker sessionStorage (mer om det unde
 Lyd håndteres med HTML5 tag for audio.
 
 ### HTML Web Storage
+Vi har benyttet HTML Web Storage til ulike formål. Dersom et bilde, tekst eller lyd blir lastet inn på siden blir det lagret i sessionStorage. Hvis brukeren trykker tilbake til dette mediet senere i samme sesjon, vil det hentes fra sessionStorage fremfor å lastes inn på nytt. På denne måten unngår vi at samme data sendes fra serveren flere ganger. Denne funksjonaliteten er implementert ved at vi sjekker om et gitt medie-element er i sessionStorage før det lastes inn. Hvis det er tilfellet hentes det fra sessionStorage, og hvis ikke lastes det inn som tidligere beskrevet. Dersom brukeren lukker fanen, vil lagret data forsvinne.
+
+I prosjektet har vi også tatt i bruk HTML localStorage for å lagre brukerens valg hvis fanen eller nettleseren lukkes. Hver gang en bruker velger en kombinasjon av mediekategorier lagres disse til localStorage. Hvis en bruker åpner en ny fane eller nettleservindu hentes disse valgene fra localStorage slik at den samme utstillingen vises. På denne måten lagres valgene til brukeren på tvers av ulike sesjoner. Ved bruk av localStorage lagres data uten utløpsdato.
 
 ### Responsive web design
 Utstillingen har et responsivt design der gruppen har tilpasset utstillingen for ulike enheters størrelser.
@@ -57,11 +60,11 @@ SVG-bildene som er implementert skalerer også fint avhengig av skjermbredde.
 
 ### Testing
 
-Vi satt opp testing i Jest. For å få Jest til å fungere måtte vi sette opp devDependencies. Vi satt opp en snapshottest på Button komponentene våre. 
+Vi satt opp testing i Jest. For å få Jest til å fungere måtte vi sette opp devDependencies. Vi satt opp en snapshot-test på Button komponentene våre. 
 Her måtte vi ignorere css filen ved å lage en tom mockup å referere til for alle css filer. 
 Dette var det eneste vi testet i Jest da testen ikke skulle være for omfattende og vi derfor ikke så noe poeng i å lage mockups eller shallowrender da dette prosjektet stort sett handlet om oppsett.
 
-Testing av det responsive designet ble utført på laptop (Windows og mac), mobil (iOS og Android) og nettbrett (iPad). På PC testet vi forskjellige bredder på skjermen med Chrome utviklerverktøy. På mobil testet vi i safari og i chrome. På iPad testet vi i safari. 
+Testing av det responsive designet ble utført på laptop (Windows og Mac), mobil (iOS og Android) og nettbrett (iPad). På PC testet vi forskjellige bredder på skjermen med Chrome utviklerverktøy. På mobil og nettbrett testet vi i Safari og i Chrome.  
 
 
 
