@@ -22,8 +22,6 @@ Filene er lagret lokalt i sine respektive mapper i /public/assets/ mappen i pros
 
 ### React
 
-![Mappestruktur](https://imgur.com/a/jEXll59)
-
 ### Ajax
 
 ### HTML Web Storage
@@ -53,3 +51,8 @@ SVG-bildene som er implementert skalerer også fint avhengig av skjermbredde.
 Vi satt opp testing i Jest. For å få Jest til å fungere måtte vi sette opp devDependencies. Vi satt opp en snapshottest på Button komponentene våre. 
 Her måtte vi ignorere css filen ved å lage en tom mockup å referere til for alle css filer. 
 Dette var det eneste vi testet i Jest da testen ikke skulle være for omfattende og vi derfor ikke så noe poeng i å lage mockups eller shallowrender da dette prosjektet stort sett handlet om oppsett.
+
+Testing av det responsive designet ble utført på laptop (Windows og mac), mobil (iOS og Android) og nettbrett (iPad). På PC testet vi forskjellige bredder på skjermen med Chrome utviklerverktøy. På mobil testet vi i safari og i chrome. På iPad testet vi i safari. 
+
+
+
