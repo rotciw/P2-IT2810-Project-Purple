@@ -1,5 +1,5 @@
 .category_button {
-    width: 100w;
+    width: 125px;
     padding: 20px;
     background-color: #F2F2F2;
     color: #2F2E41;
@@ -11,17 +11,29 @@
     font-size: 12px;
 }
 
+.alternative_button{
+    width: 70px;
+}
+
 @media (min-width: 1200px){
     .category_button{
-      padding:30px;
-      font-size: 16px;
+        width: 160px;
+        padding:30px;
+        font-size: 16px;
+    }
+    .alternative_button{
+        width: 70px;
     }
 }
 
 @media (min-width: 768px){
     .category_button{
-      padding:25px;
-      font-size: 14px;
+        width: 150px;
+        padding:25px;
+        font-size: 14px;
+    }
+    .alternative_button{
+        width: 70px;
     }
 }
 
