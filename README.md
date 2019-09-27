@@ -21,7 +21,13 @@ Filene er lagret lokalt i sine respektive mapper i /public/assets/ mappen i pros
 ## Krav til teknologi
 
 ### React
+
+Vi bygget alle komponentene fra bunn av i prosjektet vårt. Vi benyttet oss av både klasse komponenter og funksjonelle komponenter. 
+
+Dette er komponentstrukturen vi bruker:
 ![Komponent Struktur](componentStructure.png)
+
+
 
 ### Ajax
 
