@@ -50,4 +50,4 @@ SVG-bildene som er implementert skalerer også fint avhengig av skjermbredde.
 
 Vi satt opp testing i Jest. For å få Jest til å fungere måtte vi sette opp devDependencies. Vi satt opp en snapshottest på Button komponentene våre. 
 Her måtte vi ignorere css filen ved å lage en tom mockup å referere til for alle css filer. 
-Dette var det eneste vi testet i Jest da testen ikke skulle være for omfattende og vi derfor ikke så noe poeng i å lage mye mockups til andre ting i prosjektet. 
+Dette var det eneste vi testet i Jest da testen ikke skulle være for omfattende og vi derfor ikke så noe poeng i å lage mockups eller shallowrender da dette prosjektet stort sett handlet om oppsett.
